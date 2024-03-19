@@ -52,7 +52,7 @@ st.sidebar.markdown("---")
 mode = st.sidebar.radio("Select Mode:", options=["Live detection", "Single angle", "Multiple angles", "Data insight"], index=0)
 st.sidebar.markdown("---")
 
-webrtc_streamer(key='key', video_processor_factory=None)
+webrtc_streamer(key='key', video_processor_factory=None, rtc_configuration=RTCConfiguration({"iceServers": [{"urls":["stun:stun.l.google.com.19302"]}]}))
  
 if mode == "Live detection":
     st.title("Webcam Live Feed")
