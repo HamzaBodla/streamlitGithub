@@ -3,6 +3,7 @@ import base64
 import pandas as pd
 import matplotlib.pyplot as plt
 import cv2
+from streamlit_webrtc import webrtc_streamer, RTCConfiguration
  
 csv_file_path = "counts_vid_seconds.csv"
 df = pd.read_csv(csv_file_path)
@@ -50,6 +51,8 @@ st.sidebar.markdown("---")
 # Sidebar for Mode Selection
 mode = st.sidebar.radio("Select Mode:", options=["Live detection", "Single angle", "Multiple angles", "Data insight"], index=0)
 st.sidebar.markdown("---")
+
+webrtc_streamer(key='key', video_processor_factory=None)
  
 if mode == "Live detection":
     st.title("Webcam Live Feed")
