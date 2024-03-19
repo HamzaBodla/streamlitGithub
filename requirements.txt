@@ -1,2 +1,3 @@
 opencv-python-headless
 matplotlib
+webrtc_streamer
