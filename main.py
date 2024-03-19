@@ -67,7 +67,7 @@ if mode == "Live detection":
 
     while run:
         _, frame = camera.read()
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # coordinate_list = pretrained_model.detectMultiScale(frame, scaleFactor=1.1, minNeighbors=3)
 
         person_count = 0  # Reset person count for each frame
