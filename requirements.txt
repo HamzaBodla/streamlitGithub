@@ -1,3 +1,5 @@
 opencv-python-headless
 matplotlib
 streamlit_webrtc
+ultralytics
+
