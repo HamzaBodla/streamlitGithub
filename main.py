@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import cv2
 # from streamlit_webrtc import webrtc_streamer, RTCConfiguration
-import av
+# import av
 from ultralytics import YOLO
  
 csv_file_path = "counts_vid_seconds.csv"
@@ -160,7 +160,7 @@ elif mode == "Multiple angles":
     st.title("Object Detection and Tracking - Multiple angles")
     vid2 = "hall1hall2.mp4"
     st.video(vid2)
-    
+
  
 elif mode == "Data insight":
     st.title("Object Detection and Tracking - Data Insight")
